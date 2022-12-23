@@ -1,6 +1,6 @@
 'use strict';
 
-// Make navbar transparent when it is on the top
+// navbar보다 아래로 스크롤 됐을 때 이벤트 추가
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
@@ -9,4 +9,16 @@ document.addEventListener('scroll', () => {
     } else {
         navbar.classList.remove('navbar--dark');
     }
-})
+});
+
+// 클릭 시 스크롤 이벤트 추가
+const navbarMenu = document.querySelector('.navbar__menu');
+navbarMenu.addEventListener('click', () => {
+    const target = event.target;
+    const link = target.dataset.link;
+    if (link == null) {
+        return;
+    }
+    const scrollTo = document.querySelector(link);
+    scrollTo.scrollIntoView({behavior: "smooth"});
+});
