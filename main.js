@@ -19,6 +19,18 @@ navbarMenu.addEventListener('click', () => {
     if (link == null) {
         return;
     }
-    const scrollTo = document.querySelector(link);
-    scrollTo.scrollIntoView({behavior: "smooth"});
+    
+    scrollIntoView(link);
 });
+
+// 버튼 클릭 시 스크롤 이벤트 추가
+const contactBtn = document.querySelector('.home__contact');
+contactBtn.addEventListener('click', () => {
+    scrollIntoView('#contact')
+});
+
+// 스크롤뷰 함수
+function scrollIntoView(selector) {
+    const scrollTo = document.querySelector(selector);
+    scrollTo.scrollIntoView({behavior:"smooth"});
+}
