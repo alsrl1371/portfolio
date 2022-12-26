@@ -1,6 +1,6 @@
 'use strict';
 
-// navbar보다 아래로 스크롤 됐을 때 이벤트 추가
+// Navbar보다 아래로 스크롤 됐을 때 이벤트 추가
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
@@ -11,24 +11,32 @@ document.addEventListener('scroll', () => {
     }
 });
 
-// 클릭 시 스크롤 이벤트 추가
+// Navbarmenu 클릭 시 스크롤 이벤트 추가
 const navbarMenu = document.querySelector('.navbar__menu');
-navbarMenu.addEventListener('click', () => {
+navbarMenu.addEventListener('click', (event) => {
     const target = event.target;
     const link = target.dataset.link;
     if (link == null) {
         return;
     }
+    navbarMenu.classList.remove('open');
     scrollIntoView(link);
 });
 
-// 버튼 클릭 시 스크롤 이벤트 추가
+// Navbar 토글 버튼 클릭 시 메뉴 표시
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');
+    console.log('click');
+});
+
+// Contact Me 버튼 클릭 시 스크롤 이벤트 추가
 const contactBtn = document.querySelector('.home__contact');
 contactBtn.addEventListener('click', () => {
     scrollIntoView('#contact')
 });
 
-// 스크롤 시 홈 화면 투명하게 만들기
+// 아래로 스크롤 시 Home 화면 글씨만 투명하게 만들기
 const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
