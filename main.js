@@ -29,8 +29,17 @@ contactBtn.addEventListener('click', () => {
     scrollIntoView('#contact')
 });
 
+// 스크롤 시 화면 투명하게 만들기
+const home = document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', () => {
+    home.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
+
 // 스크롤뷰 함수
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior:"smooth"});
 }
+
