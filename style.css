@@ -484,6 +484,28 @@
     color: var(--color-blue);
   }
 
+  /* Arrow Button */
+  .arrow-up {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 50px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    color: var(--color-white);
+    background-color: var(--color-dark-navy);
+    opacity: 0;
+    transition: all var(--animation-duration) ease-in;
+    pointer-events: none;
+    box-shadow: 4px 8px 19px -4px var(--color-black);
+  }
+
+  .arrow-up.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
   /* For below 768px screen width */
   @media screen and (max-width: 768px) {
     .navbar__toggle-btn {
@@ -521,5 +543,13 @@
     .testimonial__avatar {
       width: 80px;
       height: 80px;
+    }
+
+    .arrow-up {
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      font-size: var(--font-medium);
     }
   }
