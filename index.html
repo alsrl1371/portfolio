@@ -1,344 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>민기의 포트폴리오</title>
-	<meta name="description" content="민기의 프론트엔드 포트폴리오">
-	<meta name="author" content="MinKi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>민기의 포트폴리오</title>
+    <meta name="description" content="민기의 프론트엔드 포트폴리오" />
+    <meta name="author" content="MinKi" />
 
-  <!-- Favicon -->
-	<link rel="icon" type="image/png" href="imgs/favicon.png">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
 
-  <!-- Font awesome -->
-	<script src="https://kit.fontawesome.com/c18d2b9f4b.js" crossorigin="anonymous"></script>
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/c18d2b9f4b.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- CSS -->
-	<link rel="stylesheet" href="style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Java Script -->
-	<script src="main.js" defer></script>
-</head>
+    <!-- Java Script -->
+    <script src="main.js" defer></script>
+  </head>
 
-<body>
-	<!-- Navbar -->
-	<nav id="navbar">
-		<div class="navbar__logo">
-			<img src="imgs/favicon.png" alt="" class="navbar__logo__imgs">
-			<a href="#">MinKi</a>
-		</div>
-		<div class="navbar__menu">
-			<ul class="navbar__menu open">
-				<li class="navbar__menu__item active" data-link="#home">Home</li>
-				<li class="navbar__menu__item" data-link="#about">About</li>
-				<li class="navbar__menu__item" data-link="#skills">Skills</li>
-				<li class="navbar__menu__item" data-link="#work">Work</li>
-				<li class="navbar__menu__item" data-link="#testimonials">Testimonials</li>
-				<li class="navbar__menu__item" data-link="#contact">Contact</li>
-			</ul>
-		</div>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <img src="imgs/favicon.png" alt="" class="navbar__logo__imgs" />
+        <a href="#">MinKi</a>
+      </div>
+      <div class="navbar__menu">
+        <ul class="navbar__menu open">
+          <li class="navbar__menu__item active" data-link="#home">Home</li>
+          <li class="navbar__menu__item" data-link="#about">About</li>
+          <li class="navbar__menu__item" data-link="#skills">Skills</li>
+          <li class="navbar__menu__item" data-link="#work">Work</li>
+          <li class="navbar__menu__item" data-link="#testimonials">
+            Testimonials
+          </li>
+          <li class="navbar__menu__item" data-link="#contact">Contact</li>
+        </ul>
+      </div>
 
-    <!-- Toggle button -->
-    <button class="navbar__toggle-btn">
-      <i class="fa-solid fa-bars"></i>
+      <!-- Toggle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+      <div class="home__container">
+        <img
+          src="imgs/profile.png"
+          alt="MinKi's profile photo"
+          class="home__avatar"
+        />
+        <h1 class="home__title">
+          안녕하세요!<br />웹 프론트엔드 개발자 <br />김민기 입니다.
+        </h1>
+        <h2 class="home__description">식사는 하셨나요?</h2>
+        <button class="home__contact">Contact Me</button>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="section__container">
+        <h1>About me</h1>
+        <p>
+          안녕하세요! 식사는 하셨나요? 밥 값하는 프론트 엔드 개발자가 되고 싶은
+          김민기입니다.<br />프론트 엔드 개발에 흥미를 느끼게 되어 전공학과를
+          졸업한 후에 프론트엔드에 관한 공부를 꾸준히 해왔고,<br />이제는 실무를
+          배워가며 더 성장하기 위해서 지원하게 되었습니다.
+        </p>
+        <div class="about__majors">
+          <div class="major">
+            <div class="major__icon">
+              <i class="fa-brands fa-html5"></i>
+            </div>
+            <div class="major__title">HTML</div>
+            <div class="major__description">
+              웹 페이지와 내용을 구조화할 수 있어요!
+            </div>
+          </div>
+          <div class="major">
+            <div class="major__icon">
+              <i class="fa-brands fa-css3-alt"></i>
+            </div>
+            <div class="major__title">CSS</div>
+            <div class="major__description">
+              마크업 언어의 레이아웃과 스타일을 꾸며줄 수 있어요!
+            </div>
+          </div>
+          <div class="major">
+            <div class="major__icon">
+              <i class="fa-brands fa-js"></i>
+            </div>
+            <div class="major__title">Javascript</div>
+            <div class="major__description">
+              웹 페이지에 기능을 더해 웹 페이지를<br />동적이고 살아 있게 만들
+              수 있어요!
+            </div>
+          </div>
+        </div>
+        <div class="about__career">
+          <div class="school">
+            <img
+              src="imgs/school-logo.png"
+              alt="bucheon-university"
+              class="school__logo"
+            />
+            <div class="school__description">
+              <p class="school__name">컴퓨터소프트웨어학과</p>
+              <p class="school__period">2017-03 / 2023-02</p>
+            </div>
+          </div>
+          <div class="academy">
+            <img src="imgs/academy-logo.png" alt="" class="academy__logo" />
+            <div class="academy__description">
+              <p class="academy__name">
+                코드 스테이츠 SEB FE 44기 프론트엔드 과정
+              </p>
+              <p class="academy__period">2023-02 / 2023-08</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <p>
+          새로운 기술을 배우는 것에 대한 열정이 있고, 팀 환경 내에서 독립적으로
+          작업할 수 있습니다.<br />계획 및 시간, 계획 수립, 엄격한 시간 압박
+          하에서 작업하고 필요할 때 신속하게 적응할 수 있는 능력이 있습니다.
+        </p>
+        <div class="skillset">
+          <div class="skillset__left">
+            <h3 class="skillset__title">Skills</h3>
+            <div class="skill">
+              <div class="skill_description">
+                <span>HTML</span>
+                <span>95%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill_description">
+                <span>CSS</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill_description">
+                <span>Javascript</span>
+                <span>80%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill_description">
+                <span>Typescript</span>
+                <span>45%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 45%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill_description">
+                <span>React</span>
+                <span>65%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 65%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill_description">
+                <span>NodeJS</span>
+                <span>45%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 45%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skillset__right">
+            <div class="tools">
+              <h3 class="skillset__title">Tools</h3>
+              <div class="tools__list">
+                <ul class="tools__list">
+                  <li><span>Visual Studio Code</span></li>
+                  <li><span>Atom</span></li>
+                  <li><span>Sketch app</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="etc">
+              <h3 class="skillset__title">Etc</h3>
+              <ul class="etc__list">
+                <li><span>Git</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="section">
+      <div class="section__container">
+        <h1>My work</h1>
+        <h3>Projects</h3>
+        <div class="work__categories">
+          <button class="category__btn selected" data-filter="*">
+            All<span class="category__count">8</span>
+          </button>
+          <button class="category__btn" data-filter="pc">
+            PC<span class="category__count">3</span>
+          </button>
+          <button class="category__btn" data-filter="mobile">
+            MOBILE<span class="category__count">3</span>
+          </button>
+          <button class="category__btn" data-filter="responsive">
+            RESPONSIVE<span class="category__count">2</span>
+          </button>
+        </div>
+        <div class="work__projects">
+          <a
+            href="https://github.com/alsrl1371/portfolio"
+            class="project"
+            target="blank"
+            data-type="responsive"
+          >
+            <img
+              src="imgs/projects/project1.png"
+              class="project__img"
+              alt="project1"
+            />
+            <div class="project__description">
+              <h3>~~Site</h3>
+              <span>~~~샬라샬라</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/alsrl1371/portfolio"
+            class="project"
+            target="blank"
+            data-type="mobile"
+          >
+            <img
+              src="imgs/projects/project2.png"
+              class="project__img"
+              alt="project1"
+            />
+            <div class="project__description">
+              <h3>~~Site</h3>
+              <span>~~~샬라샬라</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/alsrl1371/portfolio"
+            class="project"
+            target="blank"
+            data-type="pc"
+          >
+            <img
+              src="imgs/projects/project3.png"
+              class="project__img"
+              alt="project1"
+            />
+            <div class="project__description">
+              <h3>~~Site</h3>
+              <span>~~~샬라샬라</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/alsrl1371/portfolio"
+            class="project"
+            target="blank"
+            data-type="pc"
+          >
+            <img
+              src="imgs/projects/project4.png"
+              class="project__img"
+              alt="project1"
+            />
+            <div class="project__description">
+              <h3>~~Site</h3>
+              <span>~~~샬라샬라</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/alsrl1371/portfolio"
+            class="project"
+            target="blank"
+            data-type="mobile"
+          >
+            <img
+              src="imgs/projects/project5.png"
+              class="project__img"
+              alt="project1"
+            />
+            <div class="project__description">
+              <h3>~~Site</h3>
+              <span>~~~샬라샬라</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/alsrl1371/portfolio"
+            class="project"
+            target="blank"
+            data-type="pc"
+          >
+            <img
+              src="imgs/projects/project6.png"
+              class="project__img"
+              alt="project1"
+            />
+            <div class="project__description">
+              <h3>~~Site</h3>
+              <span>~~~샬라샬라</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/alsrl1371/portfolio"
+            class="project"
+            target="blank"
+            data-type="mobile"
+          >
+            <img
+              src="imgs/projects/project7.png"
+              class="project__img"
+              alt="project1"
+            />
+            <div class="project__description">
+              <h3>~~Site</h3>
+              <span>~~~샬라샬라</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/alsrl1371/portfolio"
+            class="project"
+            target="blank"
+            data-type="pc"
+          >
+            <img
+              src="imgs/projects/project8.png"
+              class="project__img"
+              alt="project1"
+            />
+            <div class="project__description">
+              <h3>~~Site</h3>
+              <span>~~~샬라샬라</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+      <div class="section__container">
+        <h1>Testimonials</h1>
+        <h3>See what they say about me</h3>
+        <div class="testimonials">
+          <div class="testimonial">
+            <img
+              src="imgs/testimonials/people1.jpg"
+              alt="People"
+              class="testimonial__avatar"
+            />
+            <div class="testimonial__speech-bubble">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                beatae accusamus a cupiditate rerum. Necessitatibus recusandae
+                natus consequuntur id a debitis vitae. Laudantium quibusdam eum
+                blanditiis animi, accusantium cumque nam!
+              </p>
+              <p class="name"><a href="">Ellie</a> / Samsung</p>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial__speech-bubble">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                beatae accusamus a cupiditate rerum. Necessitatibus recusandae
+                natus consequuntur id a debitis vitae. Laudantium quibusdam eum
+                blanditiis animi, accusantium cumque nam!
+              </p>
+              <p class="name"><a href="">Ellie</a> / Samsung</p>
+            </div>
+            <img
+              src="imgs/testimonials/people1.jpg"
+              alt="People"
+              class="testimonial__avatar"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h1 class="contact__title">Let's talk</h1>
+      <h2 class="contact__email">kimminki02@naver.com</h2>
+      <div class="conatact__links">
+        <a href="https://github.com/alsrl1371" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="#" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+      <p class="contact__rights">제작년도 : 2022-12-14</p>
+    </section>
+
+    <!-- Arrow button -->
+    <button class="arrow-up">
+      <i class="fa-solid fa-arrow-up"></i>
     </button>
-	</nav>
-
-  <!-- Home -->
-  <section id="home">
-    <div class="home__container">
-      <img src="imgs/profile.png" alt="MinKi's profile photo" class="home__avatar">
-      <h1 class="home__title">안녕하세요!<br>웹 프론트엔드 개발자 <br>김민기 입니다.</h1>
-      <h2 class="home__description">식사는 하셨나요?</h2>
-      <button class="home__contact">Contact Me</button>
-    </div>
-  </section>
-
-	<!-- About -->
-	<section id="about" class="section">
-    <div class="section__container">
-      <h1>About me</h1>
-      <p>안녕하세요! 식사는 하셨나요? 밥 값하는 프론트 엔드 개발자가 되고 싶은 김민기입니다.<br>프론트 엔드 개발에 흥미를 느끼게 되어 전공학과를 졸업한 후에 프론트엔드에 관한 공부를 꾸준히 해왔고,<br>이제는 실무를 배워가며 더 성장하기 위해서 지원하게 되었습니다.</p>
-      <div class="about__majors">
-        <div class="major">
-          <div class="major__icon">
-            <i class="fa-brands fa-html5"></i>
-          </div>
-          <div class="major__title">HTML</div>
-          <div class="major__description">웹 페이지와 내용을 구조화할 수 있어요!</div>
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fa-brands fa-css3-alt"></i>
-          </div>
-          <div class="major__title">CSS</div>
-          <div class="major__description">마크업 언어의 레이아웃과 스타일을 꾸며줄 수 있어요!</div>
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fa-brands fa-js"></i>
-          </div>
-          <div class="major__title">Javascript</div>
-          <div class="major__description">웹 페이지에 기능을 더해 웹 페이지를<br>동적이고 살아 있게 만들 수 있어요!</div>
-        </div>
-      </div>
-      <div class="about__career">
-        <div class="school">
-          <img src="imgs/school-logo.png" alt="bucheon-university" class="school__logo">
-          <div class="school__description">
-            <p class="school__name">컴퓨터소프트웨어학과</p>
-            <p class="school__period">2017-03 / 2023-02</p>
-          </div>
-        </div>
-        <div class="academy">
-          <img src="imgs/academy-logo.png" alt="" class="academy__logo">
-          <div class="academy__description">
-            <p class="academy__name">추가 예정</p>
-            <p class="academy__period">2023-02 / 2023-0?</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-	<!-- Skills -->
-	<section id="skills" class="section">
-    <div class="section__container">
-      <h1>Skills</h1>
-    <h2>Skills & Attributes</h2>
-    <p>
-      새로운 기술을 배우는 것에 대한 열정이 있고, 팀 환경 내에서 독립적으로 작업할 수 있습니다.<br>계획 및 시간, 계획 수립, 엄격한 시간 압박 하에서 작업하고 필요할 때 신속하게 적응할 수 있는 능력이 있습니다.
-    </p>
-    <div class="skillset">
-      <div class="skillset__left">
-        <h3 class="skillset__title">Skills</h3>
-        <div class="skill">
-          <div class="skill_description">
-            <span>HTML</span>
-            <span>95%</span>
-          </div>
-          <div class="skill__bar">
-            <div class="skill__value" style="width: 95%;"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill_description">
-            <span>CSS</span>
-            <span>90%</span>
-          </div>
-          <div class="skill__bar">
-            <div class="skill__value" style="width: 90%;"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill_description">
-            <span>Javascript</span>
-            <span>80%</span>
-          </div>
-          <div class="skill__bar">
-            <div class="skill__value" style="width: 80%;"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill_description">
-            <span>Typescript</span>
-            <span>0%</span>
-          </div>
-          <div class="skill__bar">
-            <div class="skill__value" style="width: 0%;"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill_description">
-            <span>React</span>
-            <span>0%</span>
-          </div>
-          <div class="skill__bar">
-            <div class="skill__value" style="width: 0%;"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill_description">
-            <span>NodeJS</span>
-            <span>0%</span>
-          </div>
-          <div class="skill__bar">
-            <div class="skill__value" style="width: 0%;"></div>
-          </div>
-        </div>
-      </div>
-      <div class="skillset__right">
-        <div class="tools">
-          <h3 class="skillset__title">Tools</h3>
-          <div class="tools__list">
-            <ul class="tools__list">
-              <li><span>Visual Studio Code</span></li>
-              <li><span>Atom</span></li>
-              <li><span>Sketch app</span></li>
-            </ul>
-          </div>
-        </div>
-        <div class="etc">
-          <h3 class="skillset__title">Etc</h3>
-          <ul class="etc__list">
-            <li><span>Git</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
-
-	<!-- Work -->
-	<section id="work" class="section">
-    <div class="section__container">
-      <h1>My work</h1>
-      <h3>Projects</h3>
-      <div class="work__categories">
-        <button class="category__btn selected" data-filter="*">All<span class="category__count">8</span></button>
-        <button class="category__btn" data-filter="pc">PC<span class="category__count">3</span></button>
-        <button class="category__btn" data-filter="mobile">MOBILE<span class="category__count">3</span></button>
-        <button class="category__btn" data-filter="responsive">RESPONSIVE<span class="category__count">2</span></button>
-      </div>
-      <div class="work__projects">
-        <a href="https://github.com/alsrl1371/portfolio" class="project" target="blank" data-type="responsive">
-          <img 
-            src="imgs/projects/project1.png" 
-            class="project__img" 
-            alt="project1"
-          >
-          <div class="project__description">
-            <h3>~~Site</h3>
-            <span>~~~샬라샬라</span>
-          </div>
-        </a>
-        <a href="https://github.com/alsrl1371/portfolio" class="project" target="blank" data-type="mobile">
-          <img 
-            src="imgs/projects/project2.png" 
-            class="project__img" 
-            alt="project1"
-          >
-          <div class="project__description">
-            <h3>~~Site</h3>
-            <span>~~~샬라샬라</span>
-          </div>
-        </a>
-        <a href="https://github.com/alsrl1371/portfolio" class="project" target="blank" data-type="pc">
-          <img 
-            src="imgs/projects/project3.png" 
-            class="project__img" 
-            alt="project1"
-          >
-          <div class="project__description">
-            <h3>~~Site</h3>
-            <span>~~~샬라샬라</span>
-          </div>
-        </a>
-        <a href="https://github.com/alsrl1371/portfolio" class="project" target="blank" data-type="pc">
-          <img 
-            src="imgs/projects/project4.png" 
-            class="project__img" 
-            alt="project1"
-          >
-          <div class="project__description">
-            <h3>~~Site</h3>
-            <span>~~~샬라샬라</span>
-          </div>
-        </a>
-        <a href="https://github.com/alsrl1371/portfolio" class="project" target="blank" data-type="mobile">
-          <img 
-            src="imgs/projects/project5.png" 
-            class="project__img" 
-            alt="project1"
-          >
-          <div class="project__description">
-            <h3>~~Site</h3>
-            <span>~~~샬라샬라</span>
-          </div>
-        </a>
-        <a href="https://github.com/alsrl1371/portfolio" class="project" target="blank" data-type="pc">
-          <img 
-            src="imgs/projects/project6.png" 
-            class="project__img" 
-            alt="project1"
-          >
-          <div class="project__description">
-            <h3>~~Site</h3>
-            <span>~~~샬라샬라</span>
-          </div>
-        </a>
-        <a href="https://github.com/alsrl1371/portfolio" class="project" target="blank" data-type="mobile">
-          <img 
-            src="imgs/projects/project7.png" 
-            class="project__img" 
-            alt="project1"
-          >
-          <div class="project__description">
-            <h3>~~Site</h3>
-            <span>~~~샬라샬라</span>
-          </div>
-        </a>
-        <a href="https://github.com/alsrl1371/portfolio" class="project" target="blank" data-type="pc">
-          <img 
-            src="imgs/projects/project8.png" 
-            class="project__img" 
-            alt="project1"
-          >
-          <div class="project__description">
-            <h3>~~Site</h3>
-            <span>~~~샬라샬라</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-	<!-- Testimonials -->
-	<section id="testimonials" class="section">
-    <div class="section__container">
-      <h1>Testimonials</h1>
-      <h3>See what they say about me</h3>
-      <div class="testimonials">
-        <div class="testimonial">
-          <img src="imgs/testimonials/people1.jpg" alt="People" class="testimonial__avatar">
-          <div class="testimonial__speech-bubble">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus beatae accusamus a cupiditate rerum. Necessitatibus recusandae natus consequuntur id a debitis vitae. Laudantium quibusdam eum blanditiis animi, accusantium cumque nam!</p>
-            <p class="name"><a href="">Ellie</a> / Samsung</p>
-          </div>
-        </div>
-        <div class="testimonial">
-          <div class="testimonial__speech-bubble">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus beatae accusamus a cupiditate rerum. Necessitatibus recusandae natus consequuntur id a debitis vitae. Laudantium quibusdam eum blanditiis animi, accusantium cumque nam!</p>
-            <p class="name"><a href="">Ellie</a> / Samsung</p>
-          </div>
-          <img src="imgs/testimonials/people1.jpg" alt="People" class="testimonial__avatar">
-        </div>
-      </div>
-    </div>
-  </section>
-
-	<!-- Contact -->
-	<section id="contact" class="section">
-    <h1 class="contact__title">Let's talk</h1>
-    <h2 class="contact__email">kimminki02@naver.com</h2>
-    <div class="conatact__links">
-      <a href="https://github.com/alsrl1371" target="_blank">
-        <i class="fa-brands fa-github"></i>
-      </a>
-      <a href="#" target="_blank">
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-    </div>
-    <p class="contact__rights">제작년도 : 2022-12-14</p>
-  </section>
-
-  <!-- Arrow button -->
-  <button class="arrow-up">
-    <i class="fa-solid fa-arrow-up"></i>
-  </button>
-</body>
+  </body>
 </html>
